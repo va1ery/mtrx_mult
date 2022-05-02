@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../mtrxmlt_vrlg.srcs/sources_1/ip/matrix_out/sim/matrix_out.v" \
+"../../../../mtrxmlt_vrlg.srcs/sources_1/ip/Matrix_B/sim/Matrix_B.v" \
+"../../../../mtrxmlt_vrlg.srcs/sources_1/ip/Matrix_A_1/sim/Matrix_A.v" \
+"../../../../mtrxmlt_vrlg.srcs/sources_1/new/matrix_multiplication.v" \
+"../../../../mtrxmlt_vrlg.srcs/sources_1/imports/mtrxmlt_vrlg/qadd.v" \
+"../../../../mtrxmlt_vrlg.srcs/sources_1/imports/mtrxmlt_vrlg/qmult.v" \
+"../../../../mtrxmlt_vrlg.srcs/sim_1/new/tb_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
